@@ -1,0 +1,29 @@
+{
+  "name": "wAggregated",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "totalAmount": {
+      "type": "number",
+      "required": true
+    },
+    "availableAmount": {
+      "type": "number",
+      "required": true
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

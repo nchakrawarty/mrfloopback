@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "accountDetails": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "wasteList": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "wasteCollected": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "bagsFromPanchayat": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "taluk": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "panchayat": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "email": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "sendEmail": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "wAggregated": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "bales": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+}

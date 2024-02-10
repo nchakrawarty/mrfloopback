@@ -1,0 +1,32 @@
+{
+  "name": "bagsFromPanchayat",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "panchayatName": {
+      "type": "string",
+      "required": true
+    },
+    "bagNumber": {
+      "type": "string",
+      "required": true
+    },
+    "weightAtPanchayat": {
+      "type": "number",
+      "required": true
+    },
+    "time": {
+      "type": "date"
+    },
+    "weightAtMRF": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
