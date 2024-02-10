@@ -21,5 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start Node.js server
+      - name: Start Node.js server > output.log 2>&1 &
         run: node server/server.js
+             sleep 5
+             curl -I http://localhost:3000
